@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    display: flex;
+    height: 100%;
+}
+
+#component-pane {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#canvas {
+    flex-grow: 1;
+    background-color: #ffffff;
+    position: relative;
+}
+
+#properties-pane {
+    width: 250px;
+    background-color: #e0e0e0;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.component {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #d0d0d0;
+    cursor: move;
+}
+
+.canvas-element {
+    position: absolute;
+    min-width: 50px;
+    min-height: 20px;
+    border: 1px solid #000;
+}
+
+#plugin-manager {
+    padding: 20px;
+}
+
+#plugin-manager ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#plugin-manager li {
+    margin-bottom: 10px;
+}
+
+#plugin-manager button {
+    margin-right: 10px;
+}

@@ -1,0 +1,33 @@
+{
+    "name": "web-app-builder",
+    "version": "1.0.0",
+    "description": "A desktop web app builder",
+    "main": "main.cjs",
+    "type": "module",
+    "scripts": {
+        "start": "electron .",
+        "package": "electron-builder"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^13.6.9",
+        "electron-builder": "^22.14.13"
+    },
+    "dependencies": {
+        "electron-is-dev": "^3.0.1",
+        "electron-store": "^8.2.0"
+    },
+    "build": {
+        "appId": "com.yourcompany.webapp-builder",
+        "productName": "Web App Builder",
+        "files": [
+            "**/*",
+            "src/**/*"
+        ],
+        "directories": {
+            "buildResources": "resources"
+        }
+    },
+    "keywords": []
+}
